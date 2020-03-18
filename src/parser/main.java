@@ -13,7 +13,6 @@ public class main {
     public static void main(String[] args) throws IOException {
         ArrayList<Product> products = new ArrayList<>();
 
-
         // TODO catch network errors and get error here
         Document doc = Jsoup.connect("https://www.klimatarier.com/de/CO2_Rechner").get();
 
@@ -31,8 +30,6 @@ public class main {
             products.add(prod);
         }
 
-
-        System.out.println(products);
+        System.out.println(products.get(0).getThumbnailUrl());
     }
-
 }

@@ -10,9 +10,7 @@ public class Product {
         this.name = name;
         this.value = value;
         this.thumbnailUrl = thumbnailUrl;
-
-        // usually always g for gram of co2 equivalent greenhouse emissions
-        this.unit = unit;
+        this.unit = unit;         // usually always g for gram of co2 equivalent greenhouse emissions
     }
 
     public String getName() {
